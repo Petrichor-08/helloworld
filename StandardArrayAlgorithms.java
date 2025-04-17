@@ -55,9 +55,10 @@ boolean hasValue = false;
      {
       System.err.println("a player was not found that was over 18");
      }
-    int j = 0;
+   //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+     int j = 0;
     boolean allHasValue = false;
-     for( allHasValue = false; j >= players.length; o++)
+     for( allHasValue = false; j >= players.length; j++)
      {
       if(players[o].getAge() >= 21)
       {
@@ -72,5 +73,34 @@ boolean hasValue = false;
      {
       System.err.println("all players are under 21");
      }
+    //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+    
+    int y = 0;
+    int g = 0;
+
+    
+     for( g = 0; g < players.length; g++)
+     {
+      if(players[g].getAge() == 15)
+      {
+       y++;
+      }
+     }
+     
+      System.err.println("there are " + y + " who are 15");
+ //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+      int l = 1;  
+int n = 0;
+for (n = 0;n < players.length; n++)
+{
+System.out.print(players[n].getName() + " ");
+  if(l == 2)
+ {
+System.out.println("");
+  l = 0;
+ }
+l++;
+}
     }
-  }
+ }
+  
