@@ -101,6 +101,33 @@ System.out.println("");
  }
 l++;
 }
+String[] arr = {"A","B","C","D","E","F"};
+
+for (int t = arr.length; t > 1; t--)
+{
+String temp = arr[t-2];
+arr[t - 2] = arr[t - 1];
+arr[y - 1] = temp;
+}
+for (int i = 0; i < arr.length/2; i++)
+{
+  String tmp = arr[i];
+  arr[i] = arr[arr.length - i - 1];
+  arr[arr.length - i - 1] = tmp;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
  }
   
